@@ -1,15 +1,16 @@
-import { Slot, SplashScreen, Stack } from "expo-router";
+import { SplashScreen, Stack } from "expo-router";
 import { StatusBar } from 'expo-status-bar'
 import { useFonts } from 'expo-font'
 import { useEffect } from "react";
 import TimerProvider from "@/context/TimeContext";
-
+import { SafeAreaView } from "react-native-safe-area-context";
 //this prevents the splascheen from autohiding until we want it to load
 SplashScreen.preventAutoHideAsync()
 
 export default function RootLayout() {
 
   const [fontsLoaded, error] = useFonts({
+    "Roboto-Mono": require("../assets/fonts/RobotoMono-Regular.ttf"),
     "Roboto-Mono": require("../assets/fonts/RobotoMono-Regular.ttf"),
   });
 

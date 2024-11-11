@@ -51,13 +51,4 @@ const NatureMeditate = () => {
     </View >
   )
 }
-
-
-//             () => router.back()
-//           }
-//             title='Back to home'
-//             containerStyles='bg-black'
-//             textStyles='color-white'
-//           />
-//
 export default NatureMeditate
